@@ -1,0 +1,304 @@
+/*!
+ * Robert Renode - Slipway (https://rrenode.github.io/Slipway)
+ * Copyright 2017 Robert Renode
+ * Licensed under MIT (https://github.com/rrenode/Slipway)
+ */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+ 
+/*!
+ * font-family: 'Open Sans', sans-serif;
+ * font-family: 'Roboto', sans-serif;
+ * #80B19A - Main Color
+ */
+ 
+/* ---------------------------------------------------------------------------- */
+/* -------------------------------------Navbar--------------------------------- */
+/* ---------------------------------------------------------------------------- */
+ 
+.dropdown-menu a {
+	color: rgba(255,255,255,.5);
+    display: block;
+	text-decoration: none;
+	font-size: 15px;
+ }
+ 
+/* ---------------------------------------------------------------------------- */
+/* ------------------------------------Html-Body------------------------------- */
+/* ---------------------------------------------------------------------------- */
+html, body {
+	height: 100%;
+	width:100%; 
+	padding:0; 
+	margin:0;
+}
+	
+body {
+background: #fff;
+color: #3F3F3F;
+font: 15px/25px serif;
+font-family: "Roboto",serif; 
+font-weight: 400;
+
+}
+
+body.index-page .main-header{
+	height: calc(100vh - 50px);
+	
+}	
+
+@media screen and (max-width:767px){
+	body.index-page .main-header {
+		height: calc(80vh - 50px);
+	}
+}
+@media screen and (max-width:500px){
+	body.index-page .main-header {
+		height: calc(70vh - 50px);
+	}
+}
+body .wrap-body {
+	position: relative;
+	
+}
+
+body {
+	background-color: white;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+	
+}
+
+.backgrounds {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  z-index: -1; 
+}
+
+.backgrounds .background {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0; 
+}
+
+.header {
+    text-align: center;
+    position: relative;
+}
+
+.header i.fa {
+	position: absolute;
+	text-align: center;
+	color: grey;
+	margin-top: 150px;
+	font-size: 70px;
+}
+
+.header i.fa:hover {
+	color: #999999;
+}
+
+.hero-section {
+  background-size: cover;
+  height: 100vh;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;	
+}
+
+.header .hero-section .hero-section-text {
+    color: #F4F1DE;
+    text-shadow: 1px 1px 2px #0a0a0a;
+}
+
+.header .hero-section .hero-section-text h1 {
+    color: #f15050;
+    text-shadow: 1px 1px 2px #542517;
+    font-size: 70px;
+    padding-bottom: 15px;
+}
+
+.overlay:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: #2b1712;
+    opacity: .9;
+}
+
+.content {
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+.section-heading {
+	margin: 60px 0 60px;
+	text-align: center;	
+}
+
+.section-heading h1 {
+	display: inline-block;
+	font-size: 60px;
+	font-weight: 500;
+}
+
+.section-heading p {
+	display: inline-block;
+	font-size: 25px;
+	font-weight: 300;
+}
+
+.section-heading .divider:after {
+  background: #e74c3c;
+}
+
+.section-heading .divider:after {
+  content: "";
+  position: relative;
+  height: 4px;
+  width: 60px;
+  display: block;
+  text-align: center;
+  margin: 13px auto;
+  -webkit-border-radius: 5em;
+  -moz-border-radius: 5em;
+  -ms-border-radius: 5em;
+  -o-border-radius: 5em;
+  border-radius: 5em;
+}
+
+/* ---------------------------------------------------------------------------- */
+/* ------------------------------------About-Section--------------------------- */
+/* ---------------------------------------------------------------------------- */
+
+.about {
+	background: rgba(242, 204, 143, 1);
+}
+
+.about-item {
+   text-align: center;
+   padding-top: 5px;
+   padding: 15px;
+}
+
+.about-item i.fa {
+    padding: 35px;
+    border-radius: 50%;
+    border: 2px solid #E07A5F;
+    color: #E07A5F;
+}
+
+.about-item:hover i.fa {
+    color: #ffffff;
+    background: #E07A5F;
+}
+
+.about-item h3 {
+   margin-top: 20px;
+}
+
+.gradient-about-demo {
+	height: 50px;
+	width: 100%;
+	background: #f2cc8f;
+	background: -moz-linear-gradient(top,  #f2cc8f 1%, #f2bf6d 99%);
+	background: -webkit-linear-gradient(top,  #f2cc8f 1%,#f2bf6d 99%);
+	background: linear-gradient(to bottom,  #f2cc8f 1%,#f2bf6d 99%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2cc8f', endColorstr='#f2bf6d',GradientType=0 );
+}
+
+/* ---------------------------------------------------------------------------- */
+/* ------------------------------------Demo-Section---------------------------- */
+/* ---------------------------------------------------------------------------- */
+
+.demo {
+	background: #F2BF6D;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+.demo-text {
+   text-align: center;
+   padding-top: 5px;
+   padding: 15px;
+}
+
+.demo-video {
+   padding: 20px;
+   border: 1px solid #b3b3b3;
+   min-height: 450px;
+   overflow: hidden;
+   position: relative;
+   height: 0;
+   box-sizing: border-box;
+   display: block;
+}
+
+.demo-video iframe {
+	width: 100%;
+    height: 100%;
+    border: none;
+	position: absolute;
+    top: 0;
+    left: 0;
+	box-sizing: border-box;
+}
+
+.demo-code {
+	
+}
+
+/* ---------------------------------------------------------------------------- */
+/* --------------------------------Download-Section---------------------------- */
+/* ---------------------------------------------------------------------------- */
+
+.download {
+	background-image: url('../img/background-get.svg');
+	background-size: cover;
+	height: 100vh;
+	margin-top: 0px;
+	padding-top: 0px;
+}
+
+.download .section-heading h1 {
+    color: #black;
+}
+
+.download .section-heading  {
+    color: #fff;
+    text-shadow: 1px 1px 2px #0a0a0a;
+}
+
+.download .section-heading .divider:after {
+  background: #fff;
+  content: "";
+  position: relative;
+  height: 4px;
+  width: 60px;
+  display: block;
+  text-align: center;
+  margin: 13px auto;
+  -webkit-border-radius: 5em;
+  -moz-border-radius: 5em;
+  -ms-border-radius: 5em;
+  -o-border-radius: 5em;
+  border-radius: 5em;
