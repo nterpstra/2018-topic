@@ -22,30 +22,41 @@
   <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-md"><div class="brand">
-        <a class="navbar-brand abs" href="#"><img class="navbar-loo" src="img/logo.png"></a></div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-collapse collapse" id="collapsingNavbar">
-            <ul class="navbar-nav mx-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#myAlert" data-toggle="collapse">Link</a>
-                </li>
-            </ul>
-            <ul class="navbar-nav mx-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="//codeply.com">Codeply</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="" data-target="#myModal" data-toggle="modal">About</a>
-                </li>
-            </ul>
+    <div class="container header">
+        <div class="header">
+            <div class="logo">
+                <a href="#"><div class="logo-inner"></div></a>
+            </div>
+            <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>-->
+            <div class="navigation">
+                <div class="navigation_left">
+                <ul>
+                    <li>
+                        <a href="#">Link</a>
+                    </li>
+                    <li >
+                        <a  href="#myAlert" data-toggle="collapse">Sub Menu</a>
+                        <div class="sub_menu">
+                            <ul><li><a  href="#myAlert" >Link</a></li></ul>
+                        </div>
+                    </li>
+                </ul>
+                </div>
+                <div class="navigation_right">
+                <ul>
+                    <li>
+                        <a href="//codeply.com">Codeply</a>
+                    </li>
+                    <li>
+                        <a href="" data-target="#myModal" data-toggle="modal">About</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
         </div>
-    </nav>
+    </div>
 
     <!-- Page Content -->
 
