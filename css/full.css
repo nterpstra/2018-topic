@@ -9,11 +9,20 @@ body {
 .navbar-brand
 {
     position: absolute;
-    width: 100%;
     left: 0;
+    top: 0;
     text-align: center;
-    margin:0 auto;
+
 }
+
+.navbar-logo {
+    margin:0 auto;
+    padding-top: 9.5px;
+    transition: all .5s;
+    width: 130px;
+    background: white;
+}
+
 .navbar-toggle {
     z-index:3;
 }
@@ -26,6 +35,8 @@ body {
         left: 0;
         text-align: center;
         margin:0 auto;
+        transition: all .5s;
+        background: white;
     }
 }
 
@@ -35,4 +46,8 @@ body {
 
 .nav-item {
     padding: 0 2rem
+}
+
+.navbar .navbar-nav a {
+    color: white;
 }
