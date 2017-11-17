@@ -8,61 +8,108 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Full - Start Bootstrap Template</title>
+    <title>FBLA Contest - 2018</title>
 
     <!-- Custom styles for this template -->
     <link href="css/full.css" rel="stylesheet">  
       
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      
+    <!-- Page Scroll Effects -->
+    <link rel="stylesheet" href="vendor/page-scroll/css/style.css"> <!-- Resourcestyle -->
+	<script src="vendor/page-scroll/js/modernizr.js"></script> <!-- Modernizr -->
+    <script src="js/smooth-scroll.js"></script>  
+  
 
 
   </head>
 
-  <body>
+  <body data-hijacking="off" data-animation="parallax">
 
-    <!-- Navigation -->
-    <div class="container header">
-        <div class="header">
-            <div class="logo">
-                <a href="#"><div class="logo-inner"></div></a>
-            </div>
-            <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>-->
-            <div class="navigation">
-                <div class="navigation_left">
+    <!------- Navigation ------->
+    <div class="container">
+        <div class="logo">
+            <a href="#"><div class="logo-inner"></div></a>
+        </div>
+        <div class="navigation">
+            <div class="navigation-left">
                 <ul>
                     <li>
-                        <a href="#">Link</a>
+                        <a href="#one">Link</a>
                     </li>
-                    <li >
-                        <a  href="#myAlert" data-toggle="collapse">Sub Menu</a>
-                        <div class="sub_menu">
-                            <ul><li><a  href="#myAlert" >Link</a></li></ul>
+                    <li>
+                        <a href="#myAlert" >Sub Menu</a>
+                        <div class="sub-menu">
+                            <ul><li><a href="#two" >Link</a></li></ul>
                         </div>
                     </li>
                 </ul>
-                </div>
-                <div class="navigation_right">
+            </div>
+            <div class="navigation-right">
                 <ul>
                     <li>
-                        <a href="//codeply.com">Codeply</a>
-                    </li>
-                    <li>
-                        <a href="" data-target="#myModal" data-toggle="modal">About</a>
-                    </li>
-                </ul>
-                </div>
+                        <a href="">Codeply</a>
+                   </li>
+                <li>
+                  <a href="" data-target="#myModal" data-toggle="modal">About</a>
+                </li>
+               </ul>
             </div>
-        </div>
+         </div>
     </div>
 
-    <!-- Page Content -->
-
+      
+    <!------- Header ------->
+     <div class="header" id="header">
+		<div class="backgrounds overlay">
+			<div class="background" style="background: url('https://codyhouse.co/demo/page-scroll-effects/img/img-3.jpg') no-repeat center center fixed;">
+			</div>
+		</div>
+		<div class="hero-section">
+            <a href="#about">
+				<i class="fa fa-angle-double-down fa-2x" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Scroll Down"></i>
+            </a>
+         </div>
+	</div>	      
+      
+      
+    <!------- Page Content ------->
+    <div class="main-content">
+        
+        <!-- Section 1 -->
+        <section class="cd-section visible" id="one">
+            <div>
+                <h2>Section 1</h2>
+            </div>
+        </section>
+ 
+        <!-- Section 2 -->
+        <section class="cd-section" id="two">
+            <div>
+                <h2>Section 2</h2>
+            </div>
+        </section>
+    </div>  
+       
+      
+    <!------- Footer ------->
+    <div class="footer">
+      
+    </div>
+      
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      
+    <!-- Paralax Scroll -->  
+    <script src="vendor/page-scroll/js/velocity.min.js"></script>
+    <script src="vendor/page-scroll/js/velocity.ui.min.js"></script>
+    <script src="vendor/page-scroll/js/main.js"></script> 
+      
+    <script>
+	   var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
 
   </body>
 

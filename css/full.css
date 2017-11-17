@@ -1,13 +1,64 @@
 body {
-  background: url('http://placehold.it/1920x1080') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
 }
 
-.navbar-toggler {
-    z-index: 3;
+
+/*******************************/
+/*******Navbar and Header*******/
+/*******************************/
+.backgrounds {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  z-index: -1; 
+}
+
+.backgrounds .background {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0; 
+}
+
+.header {
+    text-align: center;
+    height: 100vh;
+}
+
+.header i.fa {
+	position: absolute;
+	text-align: center;
+	color: grey;
+	margin-top: 150px;
+	font-size: 70px;
+}
+
+.header i.fa:hover {
+	color: #999999;
+}
+
+.hero-section {
+  background-size: cover;
+  height: 100vh;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;	
+  overflow: auto;
 }
 
 .logo {
@@ -30,10 +81,11 @@ display: block;
 }
     
 .logo-inner {
-    background: url(../img/logo.png) center top no-repeat;
+    background: url('../img/logo.png') top center;
+    background-size: 90px 111px;
     width: 90px;
     height: 111px;
-    margin: 0 auto
+    margin: 0 auto;
 }
 
 .mx-auto {
@@ -49,21 +101,23 @@ display: block;
 }
 
 .navigation {
-    padding-top: 5px
+    padding-top: 5px;
+    z-index: 99999;
 }
 
-.navigation_left {
+.navigation-left {
     width: 50%;
     float: left;
-    padding-right: 8.5%
+    padding-right: 8.5%;
+    z-index: 99999;
 }
 
-.navigation_left ul {
+.navigation-left ul {
     margin: 0;
     padding: 33px 0 10px
 }
 
-.navigation_left ul li {
+.navigation-left ul li {
     float: right;
     list-style: none;
     padding: 0 30px 10px;
@@ -75,7 +129,7 @@ a:focus {
     outline: 0
 }
 
-.navigation_left ul li>a {
+.navigation-left ul li>a {
     font-size: 18px;
     display: block;
     padding: 5px 0;
@@ -83,36 +137,37 @@ a:focus {
     border-bottom: solid 2px transparent
 }
 
-.navigation_left ul li>a:hover {
+.navigation-left ul li>a:hover {
     border: 0;
     border-bottom: 2px solid #fff
 }
 
-.navigation_right {
+.navigation-right {
     width: 50%;
     float: left;
-    padding-left: 8.5%
+    padding-left: 8.5%;
+    z-index: 99999;
 }
 
-.navigation_right ul {
+.navigation-right ul {
     margin: 0;
     padding: 33px 0 10px
 }
 
-.navigation_right ul li {
+.navigation-right ul li {
     float: left;
     list-style: none;
     padding: 0 30px 10px;
     position: relative
 }
 
-.sub_menu,
-.sub_menu:before {
+.sub-menu,
+.sub-menu:before {
     position: absolute;
     left: 50%
 }
 
-.navigation_right ul li>a {
+.navigation-right ul li>a {
     font-size: 18px;
     display: block;
     padding: 5px 0;
@@ -120,12 +175,12 @@ a:focus {
     border-bottom: solid 2px transparent
 }
 
-.navigation_right ul li>a:hover {
+.navigation-right ul li>a:hover {
     border: 0;
     border-bottom: 2px solid #fff
 }
 
-.sub_menu {
+.sub-menu {
     top: 45px;
     border: none;
     display: none;
@@ -136,7 +191,7 @@ a:focus {
     box-shadow: 3px 3px 5px rgba(0, 0, 0, .2)
 }
 
-.sub_menu:before {
+.sub-menu:before {
     content: " ";
     top: -10px;
     margin-left: -10px;
@@ -145,12 +200,12 @@ a:focus {
     border-left: solid 10px transparent
 }
 
-.sub_menu ul {
+.sub-menu ul {
     margin: 0;
     padding: 0
 }
 
-.sub_menu ul li {
+.sub-menu ul li {
     list-style: none;
     display: block;
     padding: 0;
@@ -158,7 +213,7 @@ a:focus {
     text-align: left
 }
 
-.sub_menu ul li a {
+.sub-menu ul li a {
     display: block;
     text-decoration: none;
     padding: 5px 15px;
@@ -168,27 +223,63 @@ a:focus {
     border: none
 }
 
-.sub_menu ul li a:hover {
+.sub-menu ul li a:hover {
     background: #dbdbdb;
     border: none
 }
 
-.sub_menu ul li:first-child a {
+.sub-menu ul li:first-child a {
     border-radius: 5px 5px 0 0
 }
 
-.sub_menu ul li:last-child a {
+.sub-menu ul li:last-child a {
     border-radius: 0 0 5px 5px
 }
 
-.navigation_left ul li:hover .sub_menu,
-.navigation_right ul li:hover .sub_menu {
+.navigation-left ul li:hover .sub-menu,
+.navigation-right ul li:hover .sub-menu {
     display: block
 }
 
-.navigation_left ul li>a, .navigation_right ul li>a {
+.navigation-left ul li>a, .navigation-right ul li>a {
     line-height: 2;
     font-weight: 500;
     color: #fff;
     text-decoration: none;
+}
+
+
+
+/******************************/
+/*********Main Content*********/
+/******************************/
+
+
+/*************************/
+/********Section 1********/
+/*************************/
+.section1 {
+    height: 100vh;
+}
+
+/*************************/
+/********Section 2********/
+/*************************/
+.section2 {
+    height: 100vh;
+}
+
+/*************************/
+/********Section 3********/
+/*************************/
+.section3 {
+    height: 100vh;
+}
+
+
+/*******************************/
+/********Smaller Screens********/
+/*******************************/
+@media screen and (max-width:1023px) {
+
 }
