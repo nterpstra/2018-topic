@@ -42,7 +42,7 @@ Main Components
 }
 .cd-section:first-of-type > div::before {
   /* alert -> all scrolling effects are not visible on small devices */
-  content: 'Effects not visible on mobile!';
+  content: '';
   position: absolute;
   width: 100%;
   text-align: center;
@@ -71,7 +71,7 @@ Main Components
   background-size: cover;
 }
 [data-animation="parallax"] .cd-section:first-of-type > div, [data-animation="fixed"] .cd-section:first-of-type > div, [data-animation="opacity"] .cd-section:first-of-type > div {
-  background-image: url("../img/img-1.jpg");
+  background: #fff;
 }
 [data-animation="parallax"] .cd-section:nth-of-type(2) > div, [data-animation="fixed"] .cd-section:nth-of-type(2) > div, [data-animation="opacity"] .cd-section:nth-of-type(2) > div {
   background-image: url("../img/img-2.jpg");
