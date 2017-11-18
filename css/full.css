@@ -1,8 +1,5 @@
 body {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
+
 }
 
 
@@ -44,21 +41,22 @@ body {
 	color: #999999;
 }
 
-.hero-section {
-  background-size: cover;
-  height: 100vh;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;	
-  overflow: auto;
+.section-heading {
+	text-align: center;	
+    vertical-align: inherit;
+    padding-top: 18rem;
+}
+
+.section-heading .header-text-typer h1 {
+	display: inline-block;
+	font-size: 90px;
+	font-weight: 500;
+}
+
+.section-heading .header-text-typer p {
+	display: inline-block;
+	font-size: 25px;
+	font-weight: 300;
 }
 
 .logo {
