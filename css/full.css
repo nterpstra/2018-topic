@@ -283,27 +283,51 @@ a:focus {
 /******************************/
 /*********Main Content*********/
 /******************************/
+.main-content .ml-auto, .mx-auto {
+    margin-left: auto!important;
+}
 
+.mr-auto, .mx-auto {
+    margin-right: auto!important;
+}
 
 /*************************/
 /********Section 1********/
 /*************************/
-.section1 {
-    height: 100vh;
+.homeAbout {
+    overflow: hidden;
+    position: relative;
+    padding: 2rem 0 2rem 0;
+}
+
+.homeAbout h2 {
+    padding-left: 5rem;
+}
+
+.homeAbout p {
+    font-size: 25px;
+}
+
+.team-member img {
+    width: 225px;
+    height: 225px;
+    border: 5px solid #7fbeeb;
+}
+
+.rounded-circle {
+    border-radius: 50%!important;
 }
 
 /*************************/
 /********Section 2********/
 /*************************/
-.section2 {
-    height: 100vh;
+.homeServices {
 }
 
 /*************************/
 /********Section 3********/
 /*************************/
 .section3 {
-    height: 100vh;
 }
 
 
@@ -427,4 +451,9 @@ a:focus {
     .mobile-menu ul.menu li.inactive a span {
         opacity: .5
     }
+
+    .homeAbout h2 {
+    padding-left: 0rem;
+        position: relative;
+}
 }
