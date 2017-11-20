@@ -31,6 +31,7 @@ Main Components
 
 .height {
     line-height: 100vh;
+    height: 100vh;
 }
 
 .cd-section {
@@ -100,6 +101,7 @@ Main Components
 @media only screen and (min-width: 1050px) {
   .height {
     line-height: 100vh;
+    height: 100vh;
     }
 
     .cd-section {
